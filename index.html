@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>รายชื่อหนังสือที่ร่วมกิจกรรม | Green Read</title>
   <meta name="description" content="ค้นหารายชื่อหนังสือที่ร่วมกิจกรรม Green Read จาก 28 สำนักพิมพ์ สมัครสมาชิกและแลกของรางวัล พร้อมข้อมูลบูธสำนักพิมพ์">
-  <link rel="canonical" href="https://ongkub.github.io/greenread/">
-  <link rel="icon" href="/greenread/favicon.ico">
+  <link rel="canonical" href="https://greenread.sparkth.io/">
+  <link rel="icon" href="favicon.ico">
   <meta property="og:title" content="รายชื่อหนังสือที่ร่วมกิจกรรม | Green Read">
   <meta property="og:description" content="เลือกดูหนังสือจาก 28 สำนักพิมพ์ที่ร่วมกิจกรรม Green Read สมัครสมาชิกและแลกของรางวัล">
-  <meta property="og:image" content="https://ongkub.github.io/greenread/img/og-source.jpg">
-  <meta property="og:url" content="https://ongkub.github.io/greenread/">
+  <meta property="og:image" content="https://greenread.sparkth.io/img/og-source.jpg">
+  <meta property="og:url" content="https://greenread.sparkth.io/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="th_TH">
   <meta name="theme-color" content="#0b6b3a">
@@ -129,7 +129,7 @@
   <main id="main" class="wrap">
     <section class="hero" aria-labelledby="page-title">
       <div class="hero-copy">
-        <img class="brand" src="/greenread/img/greenread-logo.webp" width="305" height="160" alt="Green Read">
+        <img class="brand" src="img/greenread-logo.webp" width="305" height="160" alt="Green Read">
         <p class="eyebrow">GREEN READ · READ &amp; REWARD</p>
         <h1 id="page-title">รายชื่อหนังสือ<br>ที่ร่วมกิจกรรม</h1>
         <p class="intro"><strong>สมัครสมาชิกและแลกของรางวัล</strong>เลือกสำนักพิมพ์เพื่อดูหนังสือที่ร่วมรายการ</p>
@@ -143,7 +143,7 @@
           </button>
         </div>
       </div>
-      <div class="hero-art"><img src="/greenread/img/hero-art.webp" width="900" height="670" alt="ผู้หญิงและเด็กอ่านหนังสือ ท่ามกลางหนังสือและกล่องของขวัญสีเขียว" fetchpriority="high"></div>
+      <div class="hero-art"><img src="img/hero-art.webp" width="900" height="670" alt="ผู้หญิงและเด็กอ่านหนังสือ ท่ามกลางหนังสือและกล่องของขวัญสีเขียว" fetchpriority="high"></div>
     </section>
     <section class="catalog" aria-labelledby="catalog-title" aria-busy="true" id="catalog">
       <div class="section-heading"><h2 id="catalog-title">เลือกสำนักพิมพ์</h2><span id="section-note" class="section-note">แตะโลโก้เพื่อดูรายชื่อ</span></div>
@@ -229,7 +229,7 @@
 
     function logo(p, className) {
       const image = el('img', className);
-      image.src = '/greenread/' + p.logo;
+      image.src = p.logo;
       image.alt = p.name;
       image.loading = 'lazy';
       image.width = 160;
@@ -331,7 +331,7 @@
       }
       active = p;
       ui['sheet-title'].textContent = p.name;
-      ui['sheet-logo'].src = '/greenread/' + p.logo;
+      ui['sheet-logo'].src = p.logo;
       ui['sheet-logo'].alt = p.name;
       ui['sheet-meta'].replaceChildren(el('span', '', number(p.books.length) + ' เล่มที่ร่วมรายการ'));
       booths(p, ui['sheet-meta']);
@@ -378,7 +378,7 @@
       ui.status.hidden = false;
       ui.status.replaceChildren(el('div', 'loading-dot'), el('p', '', 'กำลังเปิดชั้นหนังสือ…'));
       try {
-        const response = await fetch('/greenread/books.json');
+        const response = await fetch('books.json');
         if (!response.ok) throw new Error('HTTP ' + response.status);
         const data = await response.json();
         if (!Array.isArray(data) || !data.length || !data.every(p => Number.isInteger(p.no) && typeof p.name === 'string' && typeof p.logo === 'string' && Array.isArray(p.books) && p.books.every(b => typeof b.t === 'string'))) throw new Error('Invalid book data');
