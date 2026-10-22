@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>รายชื่อหนังสือที่ร่วมกิจกรรม | Green Read</title>
+  <meta name="description" content="ค้นหารายชื่อหนังสือที่ร่วมกิจกรรม Green Read จาก 28 สำนักพิมพ์ สมัครสมาชิกและแลกของรางวัล พร้อมข้อมูลบูธสำนักพิมพ์">
+  <link rel="canonical" href="https://ongkub.github.io/greenread/">
+  <link rel="icon" href="/greenread/favicon.ico">
+  <meta property="og:title" content="รายชื่อหนังสือที่ร่วมกิจกรรม | Green Read">
+  <meta property="og:description" content="เลือกดูหนังสือจาก 28 สำนักพิมพ์ที่ร่วมกิจกรรม Green Read สมัครสมาชิกและแลกของรางวัล">
+  <meta property="og:image" content="https://ongkub.github.io/greenread/img/og-source.jpg">
+  <meta property="og:url" content="https://ongkub.github.io/greenread/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta name="theme-color" content="#0b6b3a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700;800&family=Prompt:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light; --green: #0b6b3a; --medium: #1f8a4c; --leaf: #7aa63a; --mint: #f3f7ee; --border: #4f9a6e; --ink: #254533; --muted: #5b6f60; }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    html { min-width: 320px; background: #ead7bb; }
+    body { margin: 0; color: var(--ink); font-family: 'Prompt', sans-serif; font-size: 16px; line-height: 1.7; background: radial-gradient(ellipse at 9% 7%, #ffffffb3 0, transparent 25%), radial-gradient(ellipse at 87% 18%, #ffffffa1 0, transparent 25%), linear-gradient(180deg, #cfe6f3 0, #eef5f6 420px, #f4ead9 900px, #ead7bb 100%); min-height: 100vh; }
+    button, input { font: inherit; }
+    button { cursor: pointer; color: inherit; }
+    button, a, input { -webkit-tap-highlight-color: transparent; }
+    button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }
+    button { touch-action: manipulation; }
+    img { display: block; max-width: 100%; }
+    svg { flex-shrink: 0; }
+    h1, h2, h3, p { margin: 0; }
+    h1, h2, h3 { color: var(--green); }
+    .wrap { width: min(1200px, calc(100% - 32px)); margin-inline: auto; }
+    .hero { position: relative; display: grid; grid-template-columns: 1fr; padding-top: 32px; }
+    .hero-copy { position: relative; z-index: 1; }
+    .brand { width: 132px; height: auto; margin-bottom: 15px; }
+    .eyebrow { color: var(--medium); font-size: 12px; font-weight: 600; letter-spacing: .17em; margin-bottom: 6px; }
+    h1 { font-family: 'Kanit', sans-serif; font-size: clamp(32px, 6vw, 52px); font-weight: 800; line-height: 1.28; letter-spacing: -.02em; -webkit-text-stroke: 5px white; paint-order: stroke fill; text-shadow: 0 4px 8px #22684124; }
+    .intro { max-width: 560px; margin-top: 16px; font-size: 15px; }
+    .intro strong { display: block; font-weight: 600; color: var(--green); }
+    .stats { display: flex; flex-wrap: wrap; gap: 8px; margin: 19px 0; min-height: 36px; }
+    .chip { display: inline-flex; align-items: center; gap: 6px; padding: 5px 13px; border: 1px solid #7aa63a55; border-radius: 99px; color: var(--green); background: #ffffffe0; font-size: 13px; font-weight: 500; }
+    .chip svg { color: var(--leaf); }
+    .search { display: flex; align-items: center; min-height: 62px; padding: 0 8px 0 17px; gap: 10px; border: 2px solid var(--green); border-radius: 99px; background: white; box-shadow: 0 6px 0 #0b6b3a0b; }
+    .search:focus-within { box-shadow: 0 0 0 4px #7aa63a40; }
+    .search > svg { color: var(--green); }
+    .search input { width: 100%; min-width: 0; padding: 14px 0; border: 0; border-radius: 0; background: transparent; color: var(--ink); font-size: 16px; outline: none; }
+    .search input:focus-visible { outline: none; }
+    .search input::placeholder { color: #738278; opacity: 1; font-size: 14px; }
+    .icon-button { width: 44px; height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; padding: 0; border: 1px solid #bad0bc; border-radius: 50%; background: white; color: var(--green); }
+    .icon-button:hover { background: var(--mint); }
+    .clear { border: 0; background: var(--mint); }
+    .hero-art { width: min(440px, 100%); margin: 10px auto -6px; align-self: center; }
+    .hero-art img { width: 100%; height: auto; mix-blend-mode: multiply; }
+    .catalog { padding-top: 20px; padding-bottom: 32px; }
+    .section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: 0 0 20px; }
+    h2 { font-family: 'Kanit', sans-serif; font-weight: 700; font-size: 26px; line-height: 1.4; }
+    .section-note { color: var(--muted); font-size: 12px; }
+    .publisher-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .publisher-card { display: flex; flex-direction: column; align-items: stretch; padding: 10px; min-width: 0; text-align: left; border: 3px solid var(--border); border-radius: 26px; background: var(--mint); box-shadow: 0 5px 0 #0b6b3a0a; transition: transform .2s, box-shadow .2s; }
+    .publisher-card:hover { transform: translateY(-5px); box-shadow: 0 10px 22px #27573518; }
+    .logo-box { display: grid; place-items: center; width: 100%; aspect-ratio: 1.4; padding: 13px; border-radius: 16px; background: white; overflow: hidden; }
+    .logo-box img { width: 100%; height: 100%; object-fit: contain; min-height: 0; }
+    .publisher-name { display: block; margin: 11px 2px 4px; color: var(--green); font-weight: 600; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
+    .card-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin: auto 2px 2px; padding-top: 6px; font-size: 12px; color: var(--muted); }
+    .booth { display: inline-flex; align-items: center; border-radius: 99px; background: #e2edcf; color: #355619; padding: 2px 9px; font-size: 12px; font-weight: 500; white-space: nowrap; }
+    .status, .empty { padding: 34px 20px; text-align: center; border: 2px dashed #85aa87; border-radius: 28px; background: #ffffffa8; color: var(--muted); }
+    .status p + p { font-size: 14px; margin-top: 6px; }
+    .pill { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; margin-top: 16px; padding: 10px 24px; border: 0; border-radius: 99px; background: var(--green); color: white; font-weight: 600; }
+    .pill:hover { background: var(--medium); }
+    .loading-dot { width: 28px; height: 28px; margin: 0 auto 14px; border: 3px solid #c7ddc7; border-top-color: var(--green); border-radius: 50%; animation: spin .8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .results { display: grid; gap: 20px; }
+    .result-group { min-width: 0; border: 3px solid var(--border); border-radius: 28px; background: #fffef8; overflow: hidden; }
+    .result-header { display: flex; align-items: center; width: 100%; gap: 12px; padding: 16px; text-align: left; background: var(--mint); border: 0; border-bottom: 1px solid #dce5d4; }
+    .result-header:focus-visible { outline-offset: -5px; }
+    .result-logo { width: 64px; height: 48px; padding: 5px; border-radius: 10px; background: white; object-fit: contain; }
+    .result-heading { flex: 1; min-width: 0; }
+    .result-heading h3 { font-weight: 600; font-size: 16px; overflow-wrap: anywhere; }
+    .result-heading p { color: var(--muted); font-size: 12px; }
+    .book-list { list-style: none; counter-reset: books; padding: 0 20px; margin: 0; }
+    .book-list li { counter-increment: books; display: flex; align-items: baseline; gap: 13px; padding: 16px 0; line-height: 1.8; font-size: 16px; overflow-wrap: anywhere; }
+    .book-list li::before { content: counter(books, decimal-leading-zero); flex: 0 0 25px; color: var(--leaf); font-size: 13px; font-weight: 600; }
+    .book-list li + li { border-top: 1px solid #dfe6d8; }
+    .book-copy { min-width: 0; }
+    .book-code { display: block; font-size: 12px; color: var(--muted); margin-top: 3px; }
+    mark { background: #d6edb7; color: #174e2d; border-radius: 3px; padding: 0 1px; }
+    footer { text-align: center; padding: 12px 0 32px; color: #61715c; font-size: 12px; }
+    footer p + p { margin-top: 10px; font-size: 11px; letter-spacing: .05em; }
+    .overlay { position: fixed; inset: 0; z-index: 10; display: flex; align-items: flex-end; justify-content: center; background: #123a2e8c; padding: 16px 12px 0; backdrop-filter: blur(5px); }
+    .sheet { display: flex; flex-direction: column; width: 100%; max-width: 640px; max-height: 85vh; max-height: 85dvh; background: #fffef8; border: 3px solid var(--border); border-bottom: 0; border-radius: 28px 28px 0 0; box-shadow: 0 20px 80px #08291840; overflow: hidden; animation: slide-up .25s ease-out; }
+    @keyframes slide-up { from { opacity: 0; transform: translateY(35px); } to { opacity: 1; transform: translateY(0); } }
+    .sheet-top { padding: 15px 17px 18px; background: var(--mint); border-bottom: 1px solid #d5e2cb; }
+    .sheet-controls { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+    .sheet-nav { display: flex; gap: 8px; }
+    .sheet-brand { display: flex; gap: 14px; align-items: center; }
+    .sheet-logo { flex: 0 0 82px; width: 82px; height: 68px; object-fit: contain; padding: 8px; background: white; border-radius: 15px; }
+    .sheet-title-wrap { min-width: 0; }
+    .sheet-title { font-family: 'Kanit', sans-serif; font-size: 23px; line-height: 1.4; overflow-wrap: anywhere; }
+    .sheet-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; align-items: center; font-size: 12px; color: var(--muted); }
+    .sheet-body { overflow-y: auto; overscroll-behavior: contain; padding: 0 0 max(18px, env(safe-area-inset-bottom)); }
+    .sheet-body .book-list { padding-inline: 20px; }
+    .sheet-body .book-list li { font-size: 17px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    @media (max-width: 768px) { .is-searching .hero-art { display: none; } }
+    @media (min-width: 481px) { .publisher-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; } }
+    @media (min-width: 769px) {
+      .hero { grid-template-columns: .95fr 1.05fr; gap: 26px; align-items: center; padding-top: 48px; padding-bottom: 28px; }
+      .hero-copy { grid-column: 2; grid-row: 1; }
+      .hero-art { grid-column: 1; grid-row: 1; width: 100%; margin: 0; }
+      .brand { width: 150px; }
+      .catalog { padding-top: 30px; }
+      .publisher-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .publisher-name { font-size: 15px; }
+      .overlay { align-items: center; padding: 24px; }
+      .sheet { border-bottom: 3px solid var(--border); border-radius: 28px; }
+      .sheet-top { padding: 18px 24px 22px; }
+      .sheet-body .book-list { padding-inline: 28px; }
+      h2 { font-size: 30px; }
+    }
+    @media (min-width: 1101px) { .publisher-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; } }
+    @media (min-width: 1400px) { .publisher-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <img class="brand" src="/greenread/img/greenread-logo.webp" width="305" height="160" alt="Green Read">
+        <p class="eyebrow">GREEN READ · READ &amp; REWARD</p>
+        <h1 id="page-title">รายชื่อหนังสือ<br>ที่ร่วมกิจกรรม</h1>
+        <p class="intro"><strong>สมัครสมาชิกและแลกของรางวัล</strong>เลือกสำนักพิมพ์เพื่อดูหนังสือที่ร่วมรายการ</p>
+        <div id="stats" class="stats" aria-label="จำนวนสำนักพิมพ์และหนังสือ"></div>
+        <div class="search" role="search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+          <label class="sr-only" for="query">ค้นหาชื่อหนังสือ รหัสหนังสือ หรือสำนักพิมพ์</label>
+          <input id="query" type="text" placeholder="ค้นหาชื่อหนังสือ หรือสำนักพิมพ์…" autocomplete="off" spellcheck="false" aria-controls="results">
+          <button id="clear" class="icon-button clear" type="button" aria-label="ล้างคำค้นหา" hidden>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="hero-art"><img src="/greenread/img/hero-art.webp" width="900" height="670" alt="ผู้หญิงและเด็กอ่านหนังสือ ท่ามกลางหนังสือและกล่องของขวัญสีเขียว" fetchpriority="high"></div>
+    </section>
+    <section class="catalog" aria-labelledby="catalog-title" aria-busy="true" id="catalog">
+      <div class="section-heading"><h2 id="catalog-title">เลือกสำนักพิมพ์</h2><span id="section-note" class="section-note">แตะโลโก้เพื่อดูรายชื่อ</span></div>
+      <div id="status" class="status" role="status">
+        <div class="loading-dot" aria-hidden="true"></div><p>กำลังเปิดชั้นหนังสือ…</p>
+      </div>
+      <div id="grid" class="publisher-grid" hidden></div>
+      <div id="results" class="results" hidden></div>
+      <p id="search-announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+      <noscript><p class="empty">กรุณาเปิดใช้งาน JavaScript เพื่อดูรายชื่อหนังสือและค้นหาสำนักพิมพ์</p></noscript>
+    </section>
+  </main>
+  <footer id="footer" class="wrap"><p>รายชื่ออาจมีการเปลี่ยนแปลง โปรดตรวจสอบเงื่อนไขกิจกรรมกับเจ้าหน้าที่ที่บูธ</p><p>© Green Read</p></footer>
+  <div id="overlay" class="overlay" hidden>
+    <section id="sheet" class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" tabindex="-1">
+      <header class="sheet-top">
+        <div class="sheet-controls">
+          <div class="sheet-nav">
+            <button id="prev" class="icon-button" type="button" aria-label="สำนักพิมพ์ก่อนหน้า"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+            <button id="next" class="icon-button" type="button" aria-label="สำนักพิมพ์ถัดไป"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+          </div>
+          <button id="close" class="icon-button" type="button" aria-label="ปิดรายชื่อหนังสือ"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+        </div>
+        <div class="sheet-brand"><img id="sheet-logo" class="sheet-logo" width="82" height="68" alt="" loading="lazy"><div class="sheet-title-wrap"><h2 id="sheet-title" class="sheet-title"></h2><div id="sheet-meta" class="sheet-meta"></div></div></div>
+      </header>
+      <div id="sheet-body" class="sheet-body"><ol id="sheet-books" class="book-list"></ol></div>
+    </section>
+  </div>
+  <script>
+    'use strict';
+    const $ = id => document.getElementById(id);
+    const ui = Object.fromEntries(['main', 'footer', 'stats', 'query', 'clear', 'catalog', 'catalog-title', 'section-note', 'status', 'grid', 'results', 'search-announcement', 'overlay', 'sheet', 'close', 'prev', 'next', 'sheet-title', 'sheet-logo', 'sheet-meta', 'sheet-books', 'sheet-body'].map(id => [id, $(id)]));
+    let publishers = [];
+    let active = null;
+    let returnFocus = null;
+    let savedScroll = 0;
+    let loading = false;
+    const number = value => value.toLocaleString('th-TH');
+    const zeroWidth = /[\u200B-\u200D\u2060\uFEFF]/;
+
+    function el(tag, className, text) {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text !== undefined) node.textContent = text;
+      return node;
+    }
+
+    // Keep original character positions so normalized matches highlight the source text safely.
+    function normalizedMap(value) {
+      const source = String(value ?? '');
+      let text = '';
+      const positions = [];
+      for (let i = 0; i < source.length; i++) {
+        const char = source[i];
+        if (zeroWidth.test(char)) continue;
+        const lowered = /\s/.test(char) ? ' ' : char.toLowerCase();
+        if (lowered === ' ' && (!text.length || text.endsWith(' '))) continue;
+        for (const unit of lowered) { text += unit; positions.push(i); }
+      }
+      if (text.endsWith(' ')) { text = text.slice(0, -1); positions.pop(); }
+      return { text, positions, source };
+    }
+    const normalize = value => normalizedMap(value).text;
+
+    function highlighted(value, query) {
+      const fragment = document.createDocumentFragment();
+      const { text, positions, source } = normalizedMap(value);
+      if (!query) { fragment.append(document.createTextNode(source)); return fragment; }
+      let offset = 0;
+      let end = 0;
+      let found;
+      while ((found = text.indexOf(query, offset)) !== -1) {
+        const start = positions[found];
+        const stop = positions[found + query.length - 1] + 1;
+        fragment.append(document.createTextNode(source.slice(end, start)));
+        fragment.append(el('mark', '', source.slice(start, stop)));
+        end = stop;
+        offset = found + query.length;
+      }
+      fragment.append(document.createTextNode(source.slice(end)));
+      return fragment;
+    }
+
+    function logo(p, className) {
+      const image = el('img', className);
+      image.src = '/greenread/' + p.logo;
+      image.alt = p.name;
+      image.loading = 'lazy';
+      image.width = 160;
+      image.height = 112;
+      return image;
+    }
+
+    function booths(p, target) {
+      if (!p.booth) return;
+      String(p.booth).split(',').map(b => b.trim()).filter(Boolean).forEach(b => target.append(el('span', 'booth', 'บูธ ' + b)));
+    }
+
+    function bookItem(book, query = '') {
+      const item = el('li');
+      const copy = el('div', 'book-copy');
+      const title = el('span');
+      title.append(highlighted(book.t, query));
+      copy.append(title);
+      if (book.code) {
+        const code = el('small', 'book-code');
+        code.append('รหัส / ISBN: ', highlighted(book.code, query));
+        copy.append(code);
+      }
+      item.append(copy);
+      return item;
+    }
+
+    function renderGrid() {
+      const fragment = document.createDocumentFragment();
+      publishers.forEach(p => {
+        const card = el('button', 'publisher-card');
+        card.type = 'button';
+        card.setAttribute('aria-haspopup', 'dialog');
+        card.setAttribute('aria-label', p.name + ' · ' + p.books.length + ' เล่ม' + (p.booth ? ' · บูธ ' + p.booth : ''));
+        const box = el('span', 'logo-box');
+        box.append(logo(p));
+        const meta = el('span', 'card-meta');
+        meta.append(el('span', '', number(p.books.length) + ' เล่ม'));
+        booths(p, meta);
+        card.append(box, el('span', 'publisher-name', p.name), meta);
+        card.addEventListener('click', () => openPublisher(p));
+        fragment.append(card);
+      });
+      ui.grid.replaceChildren(fragment);
+    }
+
+    function renderSearch() {
+      const query = normalize(ui.query.value);
+      const searching = query.length > 0;
+      document.body.classList.toggle('is-searching', searching);
+      ui.clear.hidden = ui.query.value.length === 0;
+      ui.grid.hidden = !publishers.length || searching;
+      ui.results.hidden = !publishers.length || !searching;
+      ui['catalog-title'].textContent = searching ? 'ผลการค้นหา' : 'เลือกสำนักพิมพ์';
+      ui['section-note'].textContent = searching ? '' : 'แตะโลโก้เพื่อดูรายชื่อ';
+      ui['search-announcement'].textContent = '';
+      ui.results.replaceChildren();
+      if (!searching || !publishers.length) return;
+      let total = 0;
+      let groups = 0;
+      const fragment = document.createDocumentFragment();
+      publishers.forEach(p => {
+        const nameMatch = normalize(p.name).includes(query);
+        const books = nameMatch ? p.books : p.books.filter(b => normalize(b.t).includes(query) || normalize(b.code).includes(query));
+        if (!books.length) return;
+        total += books.length;
+        groups++;
+        const group = el('article', 'result-group');
+        const header = el('button', 'result-header');
+        header.type = 'button';
+        header.setAttribute('aria-haspopup', 'dialog');
+        header.setAttribute('aria-label', 'ดูหนังสือทั้งหมดของ ' + p.name);
+        const heading = el('div', 'result-heading');
+        const title = el('h3');
+        title.append(highlighted(p.name, query));
+        heading.append(title, el('p', '', number(books.length) + ' เล่มที่พบ · ดูทั้งหมด'));
+        header.append(logo(p, 'result-logo'), heading);
+        header.addEventListener('click', () => openPublisher(p));
+        const list = el('ol', 'book-list');
+        books.forEach(book => list.append(bookItem(book, query)));
+        group.append(header, list);
+        fragment.append(group);
+      });
+      const summary = number(total) + ' เล่ม · ' + number(groups) + ' สำนักพิมพ์';
+      ui['section-note'].textContent = summary;
+      ui['search-announcement'].textContent = 'พบ ' + summary;
+      if (!total) fragment.append(el('p', 'empty', 'ไม่พบหนังสือที่ค้นหา — ลองพิมพ์คำสั้นลง หรือเลือกจากรายชื่อสำนักพิมพ์'));
+      ui.results.replaceChildren(fragment);
+    }
+
+    function openPublisher(p, updateHistory = true) {
+      const wasOpen = active !== null;
+      if (!wasOpen) {
+        returnFocus = document.activeElement;
+        savedScroll = window.scrollY;
+        document.body.style.position = 'fixed';
+        document.body.style.top = '-' + savedScroll + 'px';
+        document.body.style.width = '100%';
+      }
+      active = p;
+      ui['sheet-title'].textContent = p.name;
+      ui['sheet-logo'].src = '/greenread/' + p.logo;
+      ui['sheet-logo'].alt = p.name;
+      ui['sheet-meta'].replaceChildren(el('span', '', number(p.books.length) + ' เล่มที่ร่วมรายการ'));
+      booths(p, ui['sheet-meta']);
+      ui['sheet-books'].replaceChildren(...p.books.map(book => bookItem(book)));
+      ui.overlay.hidden = false;
+      ui['sheet-body'].scrollTop = 0;
+      ui.close.focus({ preventScroll: true });
+      ui.main.inert = true;
+      ui.footer.inert = true;
+      if (updateHistory && location.hash !== '#p' + p.no) {
+        const url = location.pathname + location.search + '#p' + p.no;
+        if (wasOpen) history.replaceState(null, '', url);
+        else history.pushState(null, '', url);
+      }
+    }
+
+    function closePublisher(updateHistory = true) {
+      if (!active) return;
+      active = null;
+      ui.overlay.hidden = true;
+      ui.main.inert = false;
+      ui.footer.inert = false;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      window.scrollTo(0, savedScroll);
+      if (updateHistory) history.replaceState(null, '', location.pathname + location.search);
+      const target = returnFocus && returnFocus.isConnected && returnFocus !== document.body ? returnFocus : ui.query;
+      target.focus({ preventScroll: true });
+    }
+
+    function syncHash() {
+      const match = /^#p(\d+)$/.exec(location.hash);
+      const p = match && publishers.find(publisher => publisher.no === Number(match[1]));
+      if (p) {
+        if (active !== p) openPublisher(p, false);
+      } else closePublisher(false);
+    }
+
+    async function load() {
+      if (loading) return;
+      loading = true;
+      ui.catalog.setAttribute('aria-busy', 'true');
+      ui.status.hidden = false;
+      ui.status.replaceChildren(el('div', 'loading-dot'), el('p', '', 'กำลังเปิดชั้นหนังสือ…'));
+      try {
+        const response = await fetch('/greenread/books.json');
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        const data = await response.json();
+        if (!Array.isArray(data) || !data.length || !data.every(p => Number.isInteger(p.no) && typeof p.name === 'string' && typeof p.logo === 'string' && Array.isArray(p.books) && p.books.every(b => typeof b.t === 'string'))) throw new Error('Invalid book data');
+        publishers = data;
+        ui.stats.replaceChildren(el('span', 'chip', number(data.length) + ' สำนักพิมพ์'), el('span', 'chip', number(data.reduce((sum, p) => sum + p.books.length, 0)) + ' เล่ม'));
+        renderGrid();
+        renderSearch();
+        ui.status.hidden = true;
+        syncHash();
+      } catch (error) {
+        const retry = el('button', 'pill', 'ลองอีกครั้ง');
+        retry.type = 'button';
+        retry.addEventListener('click', load);
+        ui.status.replaceChildren(el('p', '', 'ยังโหลดรายชื่อหนังสือไม่ได้'), el('p', '', 'โปรดตรวจสอบการเชื่อมต่อ แล้วลองอีกครั้ง'), retry);
+      } finally {
+        loading = false;
+        ui.catalog.setAttribute('aria-busy', 'false');
+      }
+    }
+
+    ui.query.addEventListener('input', renderSearch);
+    ui.clear.addEventListener('click', () => { ui.query.value = ''; renderSearch(); ui.query.focus(); });
+    ui.close.addEventListener('click', () => closePublisher());
+    ui.overlay.addEventListener('click', event => { if (event.target === ui.overlay) closePublisher(); });
+    function stepPublisher(direction) {
+      if (!active) return;
+      const index = publishers.indexOf(active);
+      openPublisher(publishers[(index + direction + publishers.length) % publishers.length]);
+    }
+    ui.prev.addEventListener('click', () => stepPublisher(-1));
+    ui.next.addEventListener('click', () => stepPublisher(1));
+    document.addEventListener('keydown', event => {
+      if (!active) return;
+      if (event.key === 'Escape') { event.preventDefault(); closePublisher(); }
+      if (event.key === 'Tab') {
+        const buttons = Array.from(ui.sheet.querySelectorAll('button:not([disabled])'));
+        const first = buttons[0];
+        const last = buttons[buttons.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
+    });
+    window.addEventListener('popstate', syncHash);
+    window.addEventListener('hashchange', syncHash);
+    load();
+  </script>
+</body>
+</html>
